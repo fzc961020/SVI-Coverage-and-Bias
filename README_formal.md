@@ -1,6 +1,6 @@
 ![graphical_abstract](images/graphical_abstract_new.jpeg)
 
-# Nighttime Street View Imagery
+# SVI Coverage and Bias
 [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 Repository for releasing the imagery and code used in **Nighttime Street View Imagery: A New Perspective for Sensing Urban Lighting Landscape**, developed by Zicheng Fan from [Urban Analytics Lab (UAL)](https://ual.sg/), National University of Singapore (NUS).
@@ -51,22 +51,22 @@ One possible explanation is that complex vertical lighting structures are percei
 
 ## Paper / Citation
 
-If the project benefits your work, please cite the [paper](https://doi.org/10.1016/j.scs.2024.105862): 
+If the project benefits your work, please cite the [paper](https://doi.org/10.1016/j.compenvurbsys.2025.102253): 
 
-Fan, Z. and Biljecki, F. (2024) ‘Nighttime Street View Imagery: A new perspective for sensing urban lighting landscape’, Sustainable Cities and Society, 116, p. 105862. doi: [https://doi.org/10.1016/j.scs.2024.105862](https://doi.org/10.1016/j.scs.2024.105862).
-
+Fan, Z., Feng, C.-C. and Biljecki, F. (2025) ‘Coverage and bias of street view imagery in mapping the urban environment’, Computers, Environment and Urban Systems, 117, p. 102253. doi: [https://doi.org/10.1016/j.compenvurbsys.2025.102253](https://doi.org/10.1016/j.compenvurbsys.2025.102253)
 
 BibTeX:
 ```
-@article{fan_nighttime_2024,
-author = {Fan, Zicheng and Biljecki, Filip},
-doi = {10.1016/j.scs.2024.105862},
-journal = {Sustainable Cities and Society},
-pages = {105862},
-title = {Nighttime {Street} {View} {Imagery}: {A} new perspective for sensing urban lighting landscape},
-volume = {116},
-year = {2024}
+@article{fan_coverage_2025,
+	title = {Coverage and bias of street view imagery in mapping the urban environment},
+	volume = {117},
+	doi = {10.1016/j.compenvurbsys.2025.102253},
+	pages = {102253},
+	journal= {Computers, Environment and Urban Systems},
+	author = {Fan, Zicheng and Feng, Chen-Chieh and Biljecki, Filip},
+ year = {20251},
 }
+
 ```
 
 
