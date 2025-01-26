@@ -15,8 +15,17 @@ In this project, focusing on the dual nature of Street View Imagery (SVI)—both
  ### Isovist Analysis
 ![isovist](images/result_example_for_isovist_analysis.png)
 
- ### Linking Isovist Results to Image Content
+ ### Linking Isovist Results to Image Contents
  ![filter](images/image_filter.png)
+
+## Indicator System for describing SVI Coverage Extent
+| Dimensions  | Metrics                                                   | Description                                                                                                                                                              |
+|-------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Building Level** | **Completeness of SVI Coverage for Individual Building (CoC-B)** | Proportion of SVI-covered sampling points relative to the total available sampling points for a single building.                                                         |
+|             | **Frequency of SVI Coverage for Individual Building (FoC-B)** | Number of occurrences SVI achieves coverage around a single building, adjusted for building perimeter.                                                                    |
+| **Area Level**     | **Completeness of SVI Coverage on Buildings in Local Area (CoC-A)** | Proportion of SVI-covered buildings relative to the total number of buildings in a local area.                                                                            |
+|             | **Frequency of SVI Coverage on Buildings in Local Area (FoC-A)** | Sum of SVI coverage frequency for specific building types (not adjusted), relative to the total SVI coverage frequency for all buildings in the local area. |
+
 
 ## Expperiment 1 - Potential bias in the SVI covered building information
 
