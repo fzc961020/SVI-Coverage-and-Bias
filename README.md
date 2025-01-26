@@ -1,25 +1,21 @@
-![graphical_abstract](images/graphical_abstract.png)
+![isovist_workflow_with_legend](https://github.com/user-attachments/assets/2d694aa3-8462-46a4-b46a-ddc38e5e4e61)![graphical_abstract](images/graphical_abstract.png)
 
 # SVI Coverage and Bias
 [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-Repository for releasing the imagery and code used in **Nighttime Street View Imagery: A New Perspective for Sensing Urban Lighting Landscape**, developed by Zicheng Fan from [Urban Analytics Lab (UAL)](https://ual.sg/), National University of Singapore (NUS).
+Repository for releasing the code used in **Coverage and bias of street view imagery in mapping the urban environment**, developed by Zicheng Fan from [Urban Analytics Lab (UAL)](https://ual.sg/), National University of Singapore (NUS).
 
-The journal paper can be found [here](https://doi.org/10.1016/j.scs.2024.105862).
-
-The original videos recorded for extracting nighttime SVI has been uploaded to [Mapillary](https://www.mapillary.com/). 
-
-A cleaned nighttime SVI dataset, with images projected in fisheye format is available from Google Drive [link](https://drive.google.com/drive/folders/1-D15GyC-i9xa3Qv7co_dIoOped2mWwt5?usp=sharing). 
-
-Locations, timestamps, lightmeter measurements and ID for paired day-nightime images are available at [link](data/day_night_SVI_pairs.csv).
+The journal paper can be found [here](https://doi.org/10.1016/j.compenvurbsys.2025.102253).
 
 
+ ## SVI Coverage Estimation Workflow
+In **SVI Coverage and Bias** project, focusing on the dual nature of Street View Imagery (SVI)—both as vector data with geographic location and orientation and as image data capturing and mapping real-world objects—we explore a computational workflow to estimate SVI's coverage of urban building elements.
+![workflow](images/isovist_workflow_with_legend)
 
- ## Data Collection
+ ### Isovist Analysis
 
-In **Nighttime SVI** project, we build an open dataset made up of 2831 nighttime panoramic streetview images in Singapore. The map below illustrates the spatial distribution of the nighttime images.
 
-![images_distribution](images/SVI_Collection_points.png)
+
 
 Apart from the nighttime images, luminosity of scene at the same location are measured with a light meter. The nighttime images are also paired with corresponding daytime SVI from Google Street View. <!-- Each image has been enriched with a wide range of geospatial, temporal, contextual, semantic, and perceptual information adding up to 346 unique features, as shown in the below illustration. -->
 
