@@ -16,31 +16,27 @@ In this project, focusing on the dual nature of Street View Imagery (SVI)—both
 ![isovist](images/result_example_for_isovist_analysis.png)
 
  ### Linking Isovist Results to Image Content
- 
+ ![filter](images/image_filter.png)
 
-## Detecting Generic Lighting Patterns from Nighttime SVI
+## Expperiment 1 - Potential bias in the SVI covered building information
 
-To reduce the effect from image quality issues, such as glare, jitter, blur and extract useful information, we apply a series of CV methods for processing the nighttime SVI. The methods include: (1) Re-project nighttime SVI from equiretangular view to fisheye view. (2) Convert images from RGB to grayscale. (3) Extract significant lighted spots based on the luninosity difference between pixels. (4) Calculate the area of lighted spots, distance from lighted spots to image centorids, total luminosity of images and other attributes, to represent the street-level lighting pattern reflected by the image.
+For the Experiment 1, the study aims to detect the potential bias of SVI in representing building information. To begin with, we hope to know whether SVI coverage achieves an even distribution across buildings of different function types and sizes, or it is prone to highlight or ignore specific buildings in the built environment.
+The experiment is conducted by comparing interior distribution of the building-level SVI coverage completeness indicator, across buildings grouped by building types and sizes. Furthermore, we hope to learn whether the SVI captured building information is representative of the building in reality.
 
-
-
-With the k-means clustering method, we identified seven distinct street lighting patterns and map the patterns back to the collection points. It is found that some lighting patterns can be commonly observed in different functional areas. For example, Cluster 1 can frequently occurred in industrial parks, highways, and university campuses; while Cluster 5 is prevalent in low-rise and high-rise commercial areas. In addition, we can discern that each urban functional area can be typically described by one or two primary lighting patterns, and be distinguished from others by a secondary lighting pattern. Though some urban areas looks similar at a glance during nighttime, their components of lighting patterns can be significantly different. 
-
-![kmeans](images/cls_workflow_result.png) 
+![e_1](images/experiment_1.png) 
 
 
-## Inferring Street-level Luminosity at City Scale
-To map the street level lighting condition at urban scale, we have bult a deep learning workflow with the daytime street view imagery as input and the nighttime luminosity values as output. The logic behind the workflow is that daytime and nighttime SVI are related and features covered in daytime SVI, like building facades, street lamps, and greens can be useful in inferring luminosity of the same scenario in the nighttime. The best trained model is used to infer luminosity based on the 50 thousand daytime svi we collected around singaproe. In this way, we are able to map the street-level lighting conditions at urban scale. As shown in the figure, we have further compared the svi predicted luminosity with the satellite derived luminosity. It turns out that the two lighting indicators show similar global distribution. but there is also significant local discrepancies.
+##  Expperiment 2 - Poorly Represented Neighborhoods in SVI
+In the Experiment 2, we aim to identify neighborhoods that are not adequately represented in SVI. This investigation is based on the hypothesis that even if SVI provides sufficient coverage in terms of spatial distribution within a neighborhood, it may still lack adequate coverage on building facades or on other environmental elements. Consequently, this insufficiency might hinder a comprehensive representation of the built environment within the neighborhood. The experiment is conducted by comparing the spatial distribution of traditionally adopted SVI coverage indicator with the spatial distribution of new coverage indicators proposed in this study. We further compare the local built environment features, such as road density and centrality, building size, count and distance, and proportion of street view elements of greenery, vehicle and human, between the typical hot-spots and cold-spots of above coverage indicators.
 
-![dl_workflow_result](images/dl_workflow_result.png) 
+![e_2](images/experiment_2.png) 
 
-## Discrepancy Analysis
+## Experiment 3 - Impact of Collection Interval on SVI Coverage
 
-To detect where and how the lighting info represented in the two data source can be different, we built a linear regression model correlating SVI luminosity with satellite luminosity. We then examined the residual distribution of the model using Local Spatial Autocorrelation methods. Our findings indicate that in Central Business Districts (CBDs), ports, and airports—highlighted in red—SVI-based luminosity often underestimates the satellite-based luminosity. Conversely, in the rural northern areas, marked in blue, SVI-based luminosity tends to overestimate.
+In the Experiment 3, we aim to investigate the stability of SVI coverage on building facades in terms of different SVI collection intervals. This investigation is based on the hypothesis that smaller collection interval will increase both the completeness and frequency of SVI coverage on the built environment, enhancing the information density, but may not suit best for urban research due to the extra redundancies introduced and the uncertainty in distribution. On this basis, Experiment 3 explores whether there is an optimal SVI collection interval helping improve the reliability of SVI based urban research.
 
-One possible explanation is that complex vertical lighting structures are perceived differently by SVI and satellite imagery due to their distinct imaging perspectives. For instance, in red-marked areas, façade or rooftop lighting in CBDs, as well as strong aviation and industrial lighting in ports and airports, are more easily captured by satellite imagery. However, these elevated light sources can obscure street-level lighting, leading to discrepancies in the lighting information sensed by the two data sources. We have also discussed other potential causes in the paper.
+![e_3](images/experiment_3.png) 
 
-![discrepancy](images/local_moran.png) 
 
 
 
