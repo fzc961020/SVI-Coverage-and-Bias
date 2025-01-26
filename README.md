@@ -1,4 +1,4 @@
-[graphical_abstract](images/graphical_abstract.png)
+![graphical_abstract](images/graphical_abstract.png)
 
 # SVI Coverage and Bias
 [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)
@@ -8,16 +8,13 @@ Repository for releasing the code used in **Coverage and bias of street view ima
 The journal paper can be found [here](https://doi.org/10.1016/j.compenvurbsys.2025.102253).
 
 
- ## SVI Coverage Estimation Workflow
-In **SVI Coverage and Bias** project, focusing on the dual nature of Street View Imagery (SVI)—both as vector data with geographic location and orientation and as image data capturing and mapping real-world objects—we explore a computational workflow to estimate SVI's coverage of urban building elements.
+ ## SVI Coverage Estimation
+In this project, focusing on the dual nature of Street View Imagery (SVI)—both as vector data with geographic location and orientation and as image data capturing and mapping real-world objects—we explore a computational workflow to estimate SVI's coverage of urban building elements.
 ![workflow](images/isovist_workflow_with_legend)
 
  ### Isovist Analysis
 
 
-
-
-Apart from the nighttime images, luminosity of scene at the same location are measured with a light meter. The nighttime images are also paired with corresponding daytime SVI from Google Street View. <!-- Each image has been enriched with a wide range of geospatial, temporal, contextual, semantic, and perceptual information adding up to 346 unique features, as shown in the below illustration. -->
 
 ## Detecting Generic Lighting Patterns from Nighttime SVI
 
