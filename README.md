@@ -13,7 +13,7 @@ In this project, focusing on the dual nature of Street View Imagery (SVI)—both
 ![workflow](images/isovist_workflow_with_legend.png)
 
  ### Isovist Analysis
-![isovist](images/Result Example for Isovist Analysis.png)
+![isovist](images/Result_Example_for_Isovist_Analysis.png)
 
 
 ## Detecting Generic Lighting Patterns from Nighttime SVI
