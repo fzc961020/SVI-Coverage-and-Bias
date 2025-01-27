@@ -12,11 +12,13 @@ The journal paper can be found [here](https://doi.org/10.1016/j.compenvurbsys.20
 In this project, focusing on the dual nature of Street View Imagery (SVI)—both as vector data with geographic location and orientation and as image data capturing real-world objects—we explore a computational workflow to estimate SVI's coverage of urban building elements.
 ![workflow](images/isovist_workflow_with_legend.png)
 
+
  ### Isovist Analysis
 ![isovist](images/result_example_for_isovist_analysis.png)
 
  ### Linking Isovist Results to Image Contents
  ![filter](images/image_filter.png)
+
 
 ## Indicator System for describing SVI Coverage Extent
 | Dimensions  | Metrics                                                   | Description                                                                                                                                                              |
