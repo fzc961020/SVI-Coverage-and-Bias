@@ -53,7 +53,8 @@ In the Experiment 3, we aim to investigate the stability of SVI coverage on buil
 
 If the project benefits your work, please cite the [paper](https://doi.org/10.1016/j.compenvurbsys.2025.102253): 
 
-Fan, Z., Feng, C.-C. and Biljecki, F. (2025) ‘Coverage and bias of street view imagery in mapping the urban environment’, Computers, Environment and Urban Systems, 117, p. 102253. doi: [https://doi.org/10.1016/j.compenvurbsys.2025.102253](https://doi.org/10.1016/j.compenvurbsys.2025.102253)
+Fan, Z., Feng, C.-C., Biljecki, F., 2025. Coverage and bias of street view imagery in mapping the urban environment. Computers, Environment and Urban Systems 117, 102253. doi: [https://doi.org/10.1016/j.compenvurbsys.2025.102253](https://doi.org/10.1016/j.compenvurbsys.2025.102253)
+
 
 BibTeX:
 ```
