@@ -3,7 +3,7 @@
 # SVI Coverage and Bias
 [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-Repository for releasing the code used in **Coverage and bias of street view imagery in mapping the urban environment**, developed by Zicheng Fan from [Urban Analytics Lab (UAL)](https://ual.sg/), National University of Singapore (NUS).
+Repository for releasing the code used in **Coverage and bias of street view imagery in mapping the urban environment**, developed by [Zicheng Fan](https://ual.sg/author/zicheng-fan/) from [Urban Analytics Lab (UAL)](https://ual.sg/), National University of Singapore (NUS).
 
 The journal paper can be found [here](https://doi.org/10.1016/j.compenvurbsys.2025.102253).
 
@@ -64,7 +64,7 @@ BibTeX:
 	pages = {102253},
 	journal= {Computers, Environment and Urban Systems},
 	author = {Fan, Zicheng and Feng, Chen-Chieh and Biljecki, Filip},
- year = {20251},
+ 	year = {2025},
 }
 
 ```
